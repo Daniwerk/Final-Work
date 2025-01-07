@@ -1,0 +1,425 @@
+
+
+
+
+  
+  section.secction-api {
+    
+    padding: 20px;
+    background-color: #39778e6b;
+    border-radius: 8px;
+    max-width: 800px;
+    margin: 20px auto;
+    height: auto;
+    padding: 6rem;
+  }
+  
+  .container-api {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    
+  }
+  
+ .container-api h1 {
+    font-size: 24px;
+    margin: 0;
+    color: #ffffff;
+  }
+  
+  /* Nombre de la receta */
+  .nombre-receta label {
+    font-weight: bold;
+    margin-bottom: 8px;
+    display: block;
+    padding-top: 2%;
+  }
+  
+  .nombre-receta input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  /* Buscar ingredientes */
+  .buscar-ingredientes label {
+    font-weight: bold;
+    padding-top: 2%;
+    margin-bottom: 8px;
+    display: block;
+  }
+  
+  .buscar-ingredientes select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+/* Ingredientes seleccionados */
+.container-seleccionados {
+    margin-top: 2%;
+    background-color: #252927;
+    color: #f4f4f4;
+    width: 400px;
+    padding: 6rem;
+    
+    position: relative;
+    left: 105px;
+    
+    border-radius: 8px;
+  }
+  
+  .ingredientes-seleccionados {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+    
+  }
+  
+  .ingredientes-seleccionados strong {
+    flex:1;
+  }
+  
+  .ingredientes-seleccionados input {
+    width: 80px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    text-align: center;
+  }
+  
+  .ingredientes-seleccionados select {
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .ingredientes-seleccionados button {
+    position: relative;
+    bottom: 6px;
+    color: #ffffff;
+    border: none;
+    padding: 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+
+    width: 120px;
+    height: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .ingredientes-seleccionados button:hover {
+    background-color: #000000fb;
+    color: #c380fafb;
+    transition: .3s;
+  }
+  
+  /* Botón guardar */
+  .guardarreceta-container {
+    text-align: center;
+  }
+  
+  .button-guardar {
+    background-color: #374f64;
+    color: #ffffff;
+    border: none;
+    padding: 10px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+  }
+  
+  .button-guardar:hover {
+    background-color: #252927;
+    color: #c380fafb;
+    border:  1px solid #ffffff;
+  }
+  
+  /* Recetas guardadas */
+  .recetas-guardadas-container {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+
+  .titulo-guardados{
+
+    grid-column: span 2;
+  }
+  
+  .recetas-guardadas-container h2 {
+    grid-column: span 2;
+    font-size: 20px;
+    margin-bottom: 15px;
+    color: #ffffff;
+    text-align: center;
+  }
+  
+  .receta-guardada-container-card {
+    background-color: #f4f4f4;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    height: auto;
+    width: 300px;
+    transition: .3s ease-in-out;
+    margin-top: 40px;
+  }
+
+  .receta-guardada-container-card:hover{
+    background-color: #252829;
+   
+
+    border: 4px ridge #931af73b;
+    box-shadow: 0 0 8px #ffffff;
+
+    transition: .3s ease-in-out;
+
+    h3{
+        color: #80c1fafb;
+    }
+
+    button{
+        background-color: #80c1fafb;
+    }
+    
+    .receta-info{
+        color: #80c1fafb;
+    }
+  }
+  
+  
+  .receta-header {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+  }
+  
+  .receta-header h3 {
+    text-align: center;
+    margin: 20px;
+    font-size: 18px;
+    color: #376064;
+  }
+  
+  .receta-button button {
+    background-color: #376064;
+    color: #ffffff;
+    border: none;
+    padding: 4px 6px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-left: 0px;
+    height: 30px;
+    width: 100%;
+    transition: background-color 0.1s;
+  }
+  
+  .receta-button button:hover {
+    background-color: transparent;
+    color: #ffffff;
+    border-color: #1ae5f7fd;
+    border: 1px solid #1af0f7fd;
+  }
+  
+  .receta-info {
+    color: #376264;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  
+  .receta-info li {
+    font-size: 14px;
+    margin-bottom: 5px;
+  }
+  
+  .receta-nutricional {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #7f8c8d;
+  }
+  .receta-nutricional p{
+    margin-top: 10px;
+    font-size: 14px;
+    color: #7f8c8d;
+    font-weight: 600;
+  }
+  
+  .receta-nutricional strong {
+    display: block;
+    margin-bottom: 5px;
+    
+  }
+
+
+  @media (max-width: 1100px) {
+
+    section.secction-api {
+      width: 50%;
+      margin: 0 auto; 
+    }
+    
+    .container-seleccionados {
+      background-color: rgb(243, 11, 11);
+      display: flex;
+      justify-content: center; 
+      align-items: center; 
+    }
+    
+    .recetas-guardadas-container {
+      
+      display: grid; 
+      grid-template-columns: repeat(2, 1fr); 
+      row-gap: 0px;
+      gap: 80px; 
+      justify-items: center; 
+      align-items: stretch; 
+      row-gap: 0px;
+      position: relative;
+      
+    }
+
+    .guardarreceta-container{
+      margin-bottom: 60px;
+    }
+    
+    .titulo-guardados {
+      position: absolute;
+      top: -40px;
+      left: 50%;
+      
+      transform: translateX(-50%); 
+ 
+    }
+    
+    .receta-guardada-container-card {
+      width: 120%; 
+      min-height: 300px; 
+      margin-top: 60px;
+      margin-top: 20px;
+      row-gap: 0px;
+      padding: 15px;
+      border-radius: 8px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      display: flex;
+      flex-direction: column; 
+   
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+   
+      
+    }
+    
+    .receta-guardada-container-card:hover {
+      transform: scale(1.05); 
+      box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+    }
+    
+    .receta-guardada-container-card p {
+      flex-grow: 1; 
+    }
+    
+
+    }
+
+    @media (max-width: 700px){
+
+      section.secction-api {
+        width: 50%;
+        margin: 0 auto; 
+      }
+      
+      .container-seleccionados {
+        
+        display: flex;
+        justify-content: center; 
+        align-items: center;
+      }
+      
+      .recetas-guardadas-container {
+        
+        display: grid; 
+        grid-template-columns: repeat(1, 1fr); 
+        row-gap: 0px;
+        gap: 80px; 
+        justify-items: center; 
+        align-items: stretch; 
+        row-gap: 0px;
+        position: relative;
+        
+      }
+  
+      .guardarreceta-container{
+        margin-bottom: 60px;
+      }
+      
+
+      
+      .receta-guardada-container-card {
+        width: auto; 
+        min-height: 300px; 
+        margin-top: 60px;
+        margin-top: 40px;
+        row-gap: 0px;
+        padding: 15px;
+        border-radius: 8px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        display: flex;
+        flex-direction: column; 
+     
+        transition: transform 0.2s ease, box-shadow 0.2s ease;
+     
+        
+      }
+      
+      
+      .receta-guardada-container-card:hover {
+        transform: scale(1.05); 
+        box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+      }
+      
+      .receta-guardada-container-card p {
+        flex-grow: 1; 
+      }
+    }
+
+    @media (max-width: 460px){
+
+      section.secction-api {
+        width: 40%;
+        margin: 0 auto; 
+      }
+
+      .guardarreceta-container button{
+        min-width: 160px;
+        max-width: 80px;
+      }
+      
+
+    
+    
+      .recetas-guardadas-container {
+        display: grid; 
+        grid-template-columns: repeat(1, 1fr); 
+        row-gap: 0px;
+        gap: 80px; 
+        justify-items: center; 
+        align-items: stretch; 
+        row-gap: 0px;
+        position: relative;
+        width: 100%;
+        
+      }
+    
+    
+    }
